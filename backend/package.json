@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b -watch",
+    "dev": "concurrently \"pnpm run build\" \"nodemon dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
